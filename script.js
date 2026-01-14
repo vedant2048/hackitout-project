@@ -1,4 +1,22 @@
 /* --- Initial Data --- */
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        // Toggle the .active class on the hamburger (for the X animation)
+        hamburger.classList.toggle("active");
+        
+        // Toggle the .active class on the links (to slide them in)
+        navLinks.classList.toggle("active");
+    });
+
+    // Optional: Close menu when a link is clicked
+    document.querySelectorAll(".nav-links li a").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("active");
+    }));
+}); 
 const defaultData = [
     { id: 1, name: "Rahul Electricals", category: "Home Repair", location: "Mumbai", status: "Available", rating: 4.8 },
     { id: 2, name: "Elite Tutors", category: "Education", location: "Pune", status: "Busy", rating: 4.5 },

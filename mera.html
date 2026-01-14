@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mera.css">
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Apna Service</a>
+        </div>
 
-  <section class="page hero">
-    <h1>LocalPro</h1>
-    <p>Trusted professionals near you</p>
-  </section>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="mobile-only"><button class="nav-btn">Get Started</button></li>
+        </ul>
 
-  <section class="page split">
-    <div class="left">Text Content</div>
-    <div class="right">Image / Illustration</div>
-  </section>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <section class="page hero">
+        <h1>Apna Service</h1>
+        <p>Get Trusted professionals near you</p>
+        <a href="#" class="hero-btn">Get Started</a>
+        <div class="hero-fade-bottom"></div>
+    </section>
 
-<section class="search-section">
+    <section class="page split">
+        <div class="left">
+            <img src="Images/service.png" alt="Service Illustration">
+        </div>
+        <div class="right">
+            <h1>What We Provide</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laudantium corporis in deleniti aut,
+                repellat beatae deserunt est iure, quasi veniam natus voluptatem illum?
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel eos iure Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Officia dignissimos enim praesentium distinctio dolores quaerat provident
+                ea error, sunt consequatur et facere ducimus quisquam?
+            </p>
+         <a href="#" class="abtus"> About us</a>
+        </div>
+    </section>
+
+    <section class="search-section">
         <div class="container">
             <h1>Find Local Experts Near You</h1>
             <p class="subtitle">Electricians, plumbers, tutors, and more.</p>
-            
+
             <div class="filter-bar">
                 <div class="input-group search-input">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -49,7 +83,7 @@
                     </select>
                 </div>
             </div>
-            
+
             <div class="stats-row">
                 <span id="resultCount">Loading services...</span>
             </div>
@@ -58,7 +92,7 @@
 
     <main class="container">
         <div id="serviceGrid" class="service-grid">
-            </div>
+        </div>
 
         <div id="emptyState" class="empty-state hidden">
             <div class="empty-icon"><i class="fa-regular fa-folder-open"></i></div>
@@ -79,7 +113,7 @@
                     <label>Service Name</label>
                     <input type="text" id="newServiceName" placeholder="e.g. Rahul Electrician" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label>Category</label>
                     <select id="newServiceCategory" required>
@@ -118,10 +152,11 @@
 
     <script src="script.js"></script>
 
-  <section class="page cta">
-    <h2>Find help in minutes</h2>
-    <button>Get Started</button>
-  </section>
+    <section class="page cta">
+        <h2>Find help in minutes</h2>
+        <button>Get Started</button>
+    </section>
 
 </body>
+
 </html>
