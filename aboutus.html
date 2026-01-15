@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Apna Service</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Spacing for Fixed Navbar */
+        body {
+            padding-top: 80px;
+            background-color: #f3f4f6; /* Light gray background like Urban Company */
+        }
+
+        /* Header Section */
+        .about-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #fff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        /* Main Content Container */
+        .about-container {
+            max-width: 1100px;
+            margin: -40px auto 3rem auto; /* Negative margin to overlap slightly or just sit below */
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* The Main White Card */
+        .about-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Soft shadow */
+            padding: 3rem;
+            border: 1px solid #e5e7eb;
+        }
+
+        .mission-section {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 2rem;
+        }
+
+        .mission-section h2 {
+            font-size: 2rem;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .mission-section p {
+            font-size: 1.1rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* 3-Column Grid Layout */
+        .offerings-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #2266c5; /* Your Brand Blue */
+            padding-left: 15px;
+        }
+
+        .offerings-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .offering-col h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .offering-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .offering-col ul li {
+            margin-bottom: 0.8rem;
+            color: #4b5563;
+            font-size: 1rem;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        /* Bullet styling */
+        .offering-col ul li::before {
+            content: "•";
+            color: #2266c5;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .offering-col p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .italic-note {
+            font-style: italic;
+            color: #6b7280;
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .offerings-grid {
+                grid-template-columns: 1fr; /* Stack vertically on tablet/mobile */
+                gap: 2rem;
+            }
+            
+            .about-card {
+                padding: 1.5rem;
+            }
+
+            .mission-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Apna Service</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#serviceGrid">Services</a></li>
+            <li><a href="about.html" style="color: white; font-weight: bold;">About</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li class="mobile-only"><button class="nav-btn">Get Started</button></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header class="about-header">
+        <h1>About Apna Service</h1>
+    </header>
+
+    <main class="about-container">
+        <article class="about-card">
+            
+            <section class="mission-section">
+                <h2>Deliver Home Services And Solutions Like Never Experienced Before</h2>
+                <p>
+                    Apna Service is India's leading home services marketplace. The platform helps customers 
+                    book reliable and high-quality services, beauty treatments, massages, haircuts, 
+                    home cleaning, handymen, appliance repair, painting, pest control and more. Delivered 
+                    by trained professionals conveniently at home. 
+                    <br><br>
+                    Our vision is to empower millions of professionals worldwide to deliver services at home like never before.
+                </p>
+            </section>
+
+            <section class="offerings-section">
+                <h3 class="offerings-title">Made By:</h3>
+                
+                <div class="offerings-grid">
+                    
+                    <div class="offering-col">
+                        <h3>Vedant Singh</h3>
+                        <h3>Rajeev Mandover</h3>
+                        <h3>Shreyash Yadav</h3>
+                        <h3>Aryan Singh</h3>
+                    </div>
+
+                    
+            </section>
+
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apna Service - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+
     <nav class="navbar">
         <div class="logo">
-            <a href="#">Apna Service</a>
+            <a href="index.html">Apna Service</a>
         </div>
 
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#sectionclick">Services</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
             <li class="mobile-only"><button class="nav-btn">Get Started</button></li>
         </ul>
 
@@ -28,10 +31,16 @@
             <span class="bar"></span>
         </div>
     </nav>
+
     <section class="page hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="Images/genvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
         <h1>Apna Service</h1>
         <p>Get Trusted professionals near you</p>
-        <a href="#" class="hero-btn">Get Started</a>
+        <a href="#sectionclick" class="hero-btn">Get Started</a>
         <div class="hero-fade-bottom"></div>
     </section>
 
@@ -40,19 +49,19 @@
             <img src="Images/service.png" alt="Service Illustration">
         </div>
         <div class="right">
-            <h1>What We Provide</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laudantium corporis in deleniti aut,
-                repellat beatae deserunt est iure, quasi veniam natus voluptatem illum?
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel eos iure Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Officia dignissimos enim praesentium distinctio dolores quaerat provident
-                ea error, sunt consequatur et facere ducimus quisquam?
+            <h1>Your One-Stop Home Solution</h1>
+            <p>
+                We connect you with verified, highly-skilled professionals for all your home maintenance and lifestyle needs. Whether it's a quick AC repair, a deep home cleaning, or expert beauty services, we ensure top-quality service delivery right at your doorstep.
+                <br><br>
+                Experience the convenience of seamless booking with transparent pricing. No more haggling or chasing independent contractors—simply select your service, choose a time slot that works for you, and let our experts handle the rest with precision and care.
+                <br><br>
+                Your safety and satisfaction are our top priorities. Every professional on our platform undergoes a rigorous background check and specialized training to guarantee a safe, reliable, and premium experience every single time.
             </p>
-         <a href="#" class="abtus"> About us</a>
+            <a href="aboutus.html" class="abtus">More About Us</a>
         </div>
     </section>
 
-    <section class="search-section">
+    <section class="search-section" id="sectionclick">
         <div class="container">
             <h1>Find Local Experts Near You</h1>
             <p class="subtitle">Electricians, plumbers, tutors, and more.</p>
@@ -67,10 +76,13 @@
                     <select id="categoryFilter">
                         <option value="all">All Categories</option>
                         <option value="Home Repair">Home Repair</option>
+                        <option value="Cleaning">Cleaning & Pest Control</option>
+                        <option value="Beauty">Beauty & Wellness</option>
                         <option value="Education">Education</option>
-                        <option value="Health">Health</option>
+                        <option value="Health">Health & Fitness</option>
                         <option value="Automotive">Automotive</option>
                         <option value="Technology">Technology</option>
+                        <option value="Events">Events & Photography</option>
                     </select>
                 </div>
 
@@ -92,7 +104,7 @@
 
     <main class="container">
         <div id="serviceGrid" class="service-grid">
-        </div>
+            </div>
 
         <div id="emptyState" class="empty-state hidden">
             <div class="empty-icon"><i class="fa-regular fa-folder-open"></i></div>
@@ -118,10 +130,13 @@
                     <label>Category</label>
                     <select id="newServiceCategory" required>
                         <option value="Home Repair">Home Repair</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Beauty">Beauty</option>
                         <option value="Education">Education</option>
                         <option value="Health">Health</option>
                         <option value="Automotive">Automotive</option>
                         <option value="Technology">Technology</option>
+                        <option value="Events">Events</option>
                     </select>
                 </div>
 
@@ -144,19 +159,183 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 LocalFinder. All rights reserved.</p>
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-container">
+            <div class="reviews-header">
+                <h2 class="section-title">Trusted by Thousands in India</h2>
+                <p class="section-subtitle">Real feedback from our happy customers across Mumbai, Delhi, and Bangalore.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="card-top">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Rajesh Kumar" class="profile-img">
+                        <div class="profile-info">
+                            <h4 class="customer-name">Rajesh Kumar</h4>
+                            <span class="service-tag">AC Repair</span>
+                        </div>
+                    </div>
+                    <div class="star-rating">★★★★★</div>
+                    <p class="review-text">"Excellent service! The technician arrived exactly on time and fixed my AC cooling issue in under an hour."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="card-top">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Priya Sharma" class="profile-img">
+                        <div class="profile-info">
+                            <h4 class="customer-name">Priya Sharma</h4>
+                            <span class="service-tag">Home Cleaning</span>
+                        </div>
+                    </div>
+                    <div class="star-rating">★★★★★</div>
+                    <p class="review-text">"My apartment looks brand new. The cleaning team was thorough, polite, and used good quality products."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="card-top">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop" alt="Amit Patel" class="profile-img">
+                        <div class="profile-info">
+                            <h4 class="customer-name">Amit Patel</h4>
+                            <span class="service-tag">Electrician</span>
+                        </div>
+                    </div>
+                    <div class="star-rating">★★★★☆</div>
+                    <p class="review-text">"Solved a short circuit issue that two other electricians couldn't fix. Charges were transparent."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2 class="section-title">Want to Add Your Services?</h2>
+                <p class="section-subtitle">Choose a plan that fits your business and start getting customers today.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="price-card basic">
+                    <div class="card-content">
+                        <h3 class="plan-name">Basic Plan</h3>
+                        <div class="price-area">
+                            <span class="currency">₹</span><span class="amount">699</span><span class="period">/ month</span>
+                        </div>
+                        <p class="plan-desc">Perfect for individuals just starting out.</p>
+                        <hr class="divider">
+                        <ul class="feature-list">
+                            <li><span class="icon check">✔</span> Add 1 Service</li>
+                            <li><span class="icon check">✔</span> Unlimited Customer Requests</li>
+                            <li><span class="icon check">✔</span> Local Area Visibility</li>
+                            <li class="disabled"><span class="icon cross">✖</span> No Priority Listing</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn-plan">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="price-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-content">
+                        <h3 class="plan-name">Professional</h3>
+                        <div class="price-area">
+                            <span class="currency">₹</span><span class="amount">1799</span><span class="period">/ month</span>
+                        </div>
+                        <p class="plan-desc">For growing businesses needing more reach.</p>
+                        <hr class="divider">
+                        <ul class="feature-list">
+                            <li><span class="icon check">✔</span> <strong>Add up to 5 Services</strong></li>
+                            <li><span class="icon check">✔</span> Priority Search Listing</li>
+                            <li><span class="icon check">✔</span> Verified Pro Badge</li>
+                            <li><span class="icon check">✔</span> Customer Chat Enabled</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn-plan btn-primary-glow">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="price-card premium">
+                    <div class="card-content">
+                        <h3 class="plan-name">Premium Plan</h3>
+                        <div class="price-area">
+                            <span class="currency">₹</span><span class="amount">2999</span><span class="period">/ month</span>
+                        </div>
+                        <p class="plan-desc">Maximum visibility and automated leads.</p>
+                        <hr class="divider">
+                        <ul class="feature-list">
+                            <li><span class="icon check">✔</span> <strong>Add up to 15 Services</strong></li>
+                            <li><span class="icon check">✔</span> Top Priority Placement</li>
+                            <li><span class="icon check">✔</span> Dedicated Support</li>
+                            <li><span class="icon check">✔</span> Featured Profile Highlight</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn-plan">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">Apna Service</a>
+                    <p class="tagline">Trusted Local Services, Anytime.</p>
+                    <p class="brand-desc">
+                        Connecting millions of Indians with top-rated professionals. 
+                        From home repairs to personal tutors, we make hiring easy and safe.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="#sectionclick">Our Services</a></li>
+                        <li><a href="#pricing">Pricing Plans</a></li>
+                        <li><a href="#reviews">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">For Professionals</h4>
+                    <ul class="footer-links">
+                        <li><a href="#pricing">Join as a Pro <span class="badge-new">New</span></a></li>
+                        <li><a href="#pricing">Plans & Pricing</a></li>
+                        <li><a href="#">Pro Dashboard</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-envelope"></i><span>support@apnaservice.in</span></li>
+                        <li><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span>Mumbai, India 🇮🇳</span></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container bottom-flex">
+                <p>&copy; 2026 Apna Service. All rights reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart heart-icon"></i> in India</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
-    <section class="page cta">
-        <h2>Find help in minutes</h2>
-        <button>Get Started</button>
-    </section>
-
 </body>
-
 </html>
